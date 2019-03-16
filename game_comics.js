@@ -5,12 +5,8 @@ $(document).ready(function() {
   $("#reset").click(function(){
     location.reload();
   });
-  $("#scoreM").append(
-    '<p>'+scoreM+'</p>'
-  );
-  $("#scoreD").append(
-    '<p>'+scoreD+'</p>'
-  );
+  $("#scoreM").html(scoreM);
+  $("#scoreD").html(scoreD);
   $("#bttn2").html("Which do you prefer?");
   $("#bttn1").hide();
   $("#bttn3").hide();
@@ -21,6 +17,10 @@ $(document).ready(function() {
   // States are created as new objects, and take four parameters. first is a string name
   var state1 = new State("First",
     function(){
+      scoreD = 0;
+      scoreM = 0;
+      $("#scoreM").html(scoreM);
+      $("#scoreD").html(scoreD);
       $("#bttn2").html("Which do you prefer?");
       $("#bttn1").hide();
       $("#bttn3").hide();
@@ -112,12 +112,11 @@ $(document).ready(function() {
         $("#bttn3").hide(),
         $("#bttn2").show();
         if (scoreM>scoreD){
-          $("#bttn2").html("You are more of a Marvel fan <br>Click to restart");
+          $("#bttn2").html("You are more of a Marvel fan. <br>Click to restart");
         }else {
-          $("#bttn2").html("You are more of a DC fan <br>Click to restart");
+          $("#bttn2").html("You are more of a DC fan. <br>Click to restart");
         }
-        scoreD = 0;
-        scoreM = 0;
+        
         changeToState(state1);
       },
       function () {
