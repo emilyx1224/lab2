@@ -2,35 +2,54 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Nutrition Calculator
-    </title>
+    <title>Lab 2</title>
     <meta name="description" content="6313 GATech class example">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
-
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="js_comics.css" rel="stylesheet" />
   </head>
   <body>
+    <div id="banner">
+        <img src="img/banner.png" width = 100% alt="Marvel versus DC">
+        <div class="centered"><h1>Do you prefer Marvel or DC</h1></div>
+    </div>
     <div class="container">
-        <div class="row">
-            <div>
-                <h1>Breakfast calorie calculator</h1>
-                <p>Choose your breakfast</p>
-                <a class="waves-effect waves-light btn-small" id="reset">Reset</a>
-            </div>
-        </div>
-        <div class="row">
-            <div id="cal"></div>
-        </div>
-        <div class="row">
-            <div id="selection" class="col s6"></div>
-            <div id="cart" class="col s6"></div>
-        </div>
+      <!-- <div class="row">
+          <button type="button" class="btn btn-lg btn-outline-primary" id="reset"> Restart </button><br>
+      </div> -->
+      <!-- <div class="row">
+          <div id="scoreM">
+          </div>
+          <div id="scoreD">
+          </div>
+      </div> -->
+      <div class="row">
+        
+          <div class="col-md-4">
+              <div class="card mb-4 shadow-sm" id="col1">
+                  <!-- <div><img src="img/logo.png" width = " 100%" alt=" "></div> -->
+                  <button type="button" class="btn btn-lg btn-outline-primary" id="bttn1"> this is a button</button>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card mb-4 shadow-sm" id="col2">
+                  <!-- <div><img src="img/logo.png" width = " 100%" alt=" "></div> -->
+                 
+                  <button type="button" class="btn btn-lg btn-outline-primary" id="bttn2"> this is a button</button>
+              </div>
+          </div>
+          <div class="col-md-4" id="col3">
+              <div class="card mb-4 shadow-sm">
+                  <!-- <div><img src="img/logo.png" width = " 100%" alt=" "></div> -->
+                  
+                  <button type="button" class="btn btn-lg btn-outline-primary" id="bttn3"> this is a button</button>
+              </div>
+          </div>
+      </div>
     </div>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js_emily.js"></script>
+  <script src="engine_comics.js"></script>
+  <script src="game_comics.js"></script>
 </html>
