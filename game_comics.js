@@ -15,6 +15,7 @@ $(document).ready(function() {
 
   // In this version, you create new states like this
   // States are created as new objects, and take four parameters. first is a string name
+  // display the question
   var state1 = new State("First",
     function(){
       scoreD = 0;
@@ -32,7 +33,7 @@ $(document).ready(function() {
     },
     null // fourth is the exit function
   );
-
+  // display two choices: Ironman or Batman
   var state2 = new State("Second",
  
     function () {  // You can add functions to states this way
@@ -48,7 +49,7 @@ $(document).ready(function() {
     },
     null
   );
-
+  // display the question
   var state3 = new State("Third",
     function() {
       $("#bttn2").show(),
@@ -62,7 +63,7 @@ $(document).ready(function() {
     },
     null
   );
-
+  // display two choices: Thor or Wonder Woman
   var state4 = new State("Forth",
     function() {
       $("#bttn1").show(),
@@ -77,7 +78,7 @@ $(document).ready(function() {
     },
     null
   );
-
+  // display the question
   var state5 = new State("Fifth",
     function() {
       $("#bttn2").show(),
@@ -91,7 +92,7 @@ $(document).ready(function() {
     },
     null
   );
-
+  // display two choices: Avengers or Justice League
     var state6 = new State("Sixth",
     function() {
       $("#bttn1").show(),
@@ -106,6 +107,7 @@ $(document).ready(function() {
     },
     null
   );
+  // display two different outcomes depending on the score
     var state7 = new State("Seventh",
       function() {
         $("#bttn1").hide(),
